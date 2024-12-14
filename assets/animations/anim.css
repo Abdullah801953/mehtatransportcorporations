@@ -1,0 +1,19 @@
+/* scroller */
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+/* ripple effect */
+@keyframes wave {
+  0% {
+    box-shadow: 0 0 0px 0px rgb(215 201 25 / 50%);;
+  }
+  100% {
+    box-shadow: 0 0 0px 15px rgba(255, 255, 255, 0);
+  }
+}

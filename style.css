@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+ul li {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  margin: 0px !important;
+}
+ul li a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+ul {
+  margin: 0px !important;
+}
+span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  margin: 0px !important;
+}
+/* fonts */
+@font-face {
+  font-family: "MyCustomFontOne";
+  src: url("./assets/fonts/elementskit.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFontTwo";
+  src: url("./assets/fonts/fa-solid-900.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFontThree";
+  src: url("./assets/fonts/forminator-icons-font.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFontFour";
+  src: url("./assets/fonts/KFOlCnqEu92Fr1MmEU9fBBc4.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFontFive";
+  src: url("./assets/fonts/KFOmCnqEu92Fr1Mu4mxK.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFontSix";
+  src: url("./assets/fonts/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFontSeven";
+  src: url("./assets/fonts/pxiByp8kv8JHgFVrLDD4Z1xlFQ.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFontEight";
+  src: url("./assets/fonts/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFontNine";
+  src: url("./assets/fonts/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFontTen";
+  src: url("./assets/fonts/pxiEyp8kv8JHgFVrJJfecg.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/* nav style */
+header nav {
+  background-color: #1f1f2e;
+}
+.navbar.show {
+  display: block; /* Show when active */
+}
+header nav .social-icon ul li i {
+  color: var(--color-primary);
+}
+/* banner style */
+main .video .banner-header {
+  padding: 10px 40px 10px 40px;
+  z-index: 100;
+  /* background-color: #1f1f2e; */
+}
+.responsive-video {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  display: block;
+}
+.video .over-lay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+main .banner-section .video .logo img {
+  height: auto;
+  width: 286px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+main .banner-section .video .logo {
+  padding: 10px;
+}
+main .banner-section .video .menu-btn {
+  padding: 10px;
+}
+main .banner-section .video .menu-btn button {
+  color: #1f1f2e;
+  background-color: var(--color-primary);
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5% 5% 5% 5%;
+  padding: 11px 30px;
+  border: none;
+  font-size: 18px;
+  width: auto;
+}
+main .banner-section .video .banner-h2 h2 {
+  color: #ffffff;
+  font-family: "Poppins", Sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+main .banner-section .video .banner-h1 h1 {
+  color: var(--color-secondary);
+  font-family: "Poppins", Sans-serif;
+  font-size: 90px;
+  font-weight: 700;
+}
+main .banner-section .video .banner-para {
+  width: 40%;
+}
+main .banner-section .banner-info {
+  top: 30%;
+}
+main .banner-section .mouse {
+  border-color: #ffffff;
+  height: 40px;
+  width: 25px;
+  border-width: 2px;
+  border-radius: 50px;
+  bottom: 10%;
+  border-style: solid;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+}
+main .banner-section .mouse .scroller {
+  width: 3px;
+  height: 10px;
+  margin-top: 0px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+  display: inline-block;
+}
+/* about style */
+main #about-section .about h4 {
+  color: var(--color-secondary);
+  font-family: "Poppins", Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+main #about-section .about h2 {
+  color: #1f1f2e;
+  font-family: "Poppins", Sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+main #about-section .about h4 a {
+  color: #1f1f2e;
+  font-family: "Poppins", Sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+main #about-section .about .yt-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  width: 55px;
+  margin: 0 20px;
+  color: red;
+  background: var(--color-secondary);
+  box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 250ms color;
+  -webkit-transition: 250ms color;
+  -moz-transition: 250ms color;
+  -ms-transition: 250ms color;
+  -o-transition: 250ms color;
+  animation-name: wave;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+/* contact style */
+main .contact-section .contact {
+  background-color: #f2f2f4;
+}
+main .contact-section .contact-form {
+  background-color: #1f1f2e;
+}
+main .contact-section .contact-h5 {
+  color: var(--color-secondary);
+  font-family: "Poppins", Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+main .contact-section .contact-h2 h2 {
+  color: #1f1f2e;
+  font-family: "Poppins", Sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+main .contact-section .contact-data span {
+  color: var(--color-secondary);
+  font-family: "Poppins", Sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+}
+main .contact-section .contact .contact-info {
+  padding: 102px 78px !important;
+}
+main .contact-section .contact .contact-form form input,
+select,
+button {
+  width: 27vw;
+  margin: 20px 0;
+}
+main .contact-section .contact .contact-form form button {
+  margin: 20px 0;
+  border: none;
+  background-color: #17a8e3;
+  transition: 0.3s ease-in-out;
+}
+main .contact-section .contact .contact-form form button:hover {
+  background-color: #008fca;
+  color: #ffffff;
+}
+main .contact-section .contact .contact-form form input {
+  background-color: #ededed;
+  border: none;
+  border-radius: 3px;
+}
+main .contact-section .contact .contact-form form input:hover {
+  border: 1px solid #17a8e3 !important;
+  border-radius: 3px;
+  transition: 0.2s ease-in-out;
+}
+/* services style */
+main .our-service .service .service-h5 h5 {
+  color: var(--color-secondary);
+  font-family: "Poppins", Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+main .our-service .service .service-h2 h2 {
+  color: #1f1f2e;
+  font-family: "Poppins", Sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+main .our-service .service .card-header {
+  background-color: var(--color-card);
+}
+main .our-service .service .card-icon {
+  background-color: var(--color-card-icon);
+  padding: 32px 27px;
+  top: 7%;
+  left: 30%;
+  width: 37%;
+}
+main .our-service .service .card-h5 {
+  color: #000000;
+  font-family: "Poppins", Sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+main .our-service .service .card-para p {
+  color: #767676;
+  font-family: "Poppins", Sans-serif;
+  margin-top: 10px;
+  font-size: 15px;
+}
+main .our-service .service .card-link a {
+  color: #ff8200 !important;
+  font-family: "Poppins", Sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 0px;
+}
+/* choose us style */
+main .choose-us .choose-us-bg1 {
+  background-image: url(assets/img/many-transport-trucks-parked-service-station-sunset-ai-generative-1.jpg);
+  background-size: cover;
+  height: 500px;
+  padding: 100px 0;
+}
+main .choose-us .choose-us-bg2 {
+  background-image: url(assets/img/2-1-scaled.jpg);
+  background-size: cover;
+  height: 500px;
+  padding: 100px 0;
+}
+main .choose-us .choose-h6 h6 {
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+main .choose-us .choose-h2 h2 {
+  color: #ffffff;
+  font-family: "Poppins", Sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+main .choose-us .choose-para p {
+  color: #ffffff;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+}
+main .choose-us .choose-btn button {
+  border: none;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  background-color: var(--color-primary);
+  font-family: "Poppins", Sans-serif;
+  font-weight: 600;
+  color: var(--color-card);
+}
+main .choose-us .choose-overlay-left {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFC03DD9;
+  opacity: 0.81;
+}
+main .choose-us .choose-overlay-right{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #212d45;
+  opacity: 0.81;
+}
+main .choose-us .choose-h2-right h2{
+  color: #212d45;
+  font-family: "Poppins", Sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+.choose-list ul i{
+  margin-right: 12px!important;
+}

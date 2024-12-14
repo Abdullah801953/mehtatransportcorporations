@@ -1,0 +1,9 @@
+/* css var */
+:root {
+    --color-primary: #ffc03d;
+    --color-secondary: #ffb407;
+    --color-card:#1F1F2E;
+    --color-card-icon:#FFB407;
+    --color-card-para:#767676;
+    --color-card-a:#FF8200;
+  }
