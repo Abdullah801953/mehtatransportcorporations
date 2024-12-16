@@ -42,6 +42,10 @@
   main .banner-section .video .banner-para {
     width: 22%;
   }
+  main .banner-section .banner-btn {
+    bottom: 14%;
+    width: 100%!important;
+}
 }
 @media (max-width: 768px) {
   .our-service .service .card {
@@ -102,6 +106,7 @@
   .navbar{
     gap: 15px!important;
   }
+  
 }
 
 @media (min-width: 1024px) {
