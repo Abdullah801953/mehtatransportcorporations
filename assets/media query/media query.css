@@ -94,6 +94,9 @@
   .ham-logo img{
     width: 22rem!important;
   }
+  .navbar{
+    gap: 15px!important;
+  }
 }
 
 @media (min-width: 1024px) {
