@@ -44,3 +44,14 @@ document.getElementById("play-btn").addEventListener("click", () => {
   frame.style.display = "block";
   // document.getElementById("play-btn").style.display = "none";
 });
+// ham close and open
+const coutBtn=document.querySelector(".cout-icon-width");
+coutBtn.addEventListener("click",()=>{
+  const sideNav=document.querySelector(".ham-overlay");
+  sideNav.classList.remove("open-nav");
+})
+const menuBtn=document.querySelector(".menu-btn");
+menuBtn.addEventListener("click",()=>{
+  const sideNav=document.querySelector(".ham-overlay");
+  sideNav.classList.add("open-nav");
+})

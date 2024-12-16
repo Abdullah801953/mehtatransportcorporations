@@ -55,14 +55,90 @@
     />
     <!-- swiper css -->
     <link rel="stylesheet" href="assets/swiper.css/swiper.css" />
+    <!-- media query -->
+    <link rel="stylesheet" href="assets/media query/media query.css" />
   </head>
   <body>
+    <!-- hamburger overlay start -->
+    <div class="ham-overlay w-100 h-auto position-fixed top-0 z-3">
+      <div class="ham-nav-list w-50 ms-auto">
+        <div class="cut-icon z-3 pt-4 pb-5 px-2">
+          <div class="rounded-5 cout-icon-width ms-auto">
+            <i class="fa-solid fa-circle-xmark fs-2 text-white pointer"></i>
+          </div>
+          <div class="ham-logo py-2 px-1">
+            <img src="assets/img/logo2.png" class="w-100" alt="" />
+          </div>
+          <div class="ham-link py-2 px-1">
+            <ul>
+              <li class="pb-3 mt-3"><a href="">Home</a></li>
+              <li class="pb-3 mt-3"><a href="">About</a></li>
+              <li class="pb-3 mt-3"><a href="">Our Services</a></li>
+              <li class="pb-3 mt-3"><a href="">Our Clients</a></li>
+              <li class="pb-3 mt-3"><a href="">Find Branch Location</a></li>
+              <li class="pb-3 mt-3"><a href="">Our Achievements</a></li>
+              <li class="pb-3 mt-3"><a href="">Our Responsibilities</a></li>
+              <li class="pb-3 mt-3"><a href="">Our Blogs</a></li>
+              <li class="pb-3 mt-3 last-li"><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="ham-h5 px-2">
+            <h5>Follow Us</h5>
+          </div>
+          <div class="ham-line mx-2 my-3"></div>
+          <div class="social-icon">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href=""><i class="fa-brands fa-facebook mx-2 fs-5"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href=""><i class="fa-brands fa-twitter mx-2 fs-5"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href=""><i class="fa-brands fa-youtube fs-5"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href=""><i class="fa-brands fa-instagram mx-2 fs-5"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href=""><i class="fa-brands fa-linkedin mx-2 fs-5"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="download">
+            <div class="ham-h5 px-2 mt-4">
+              <h5>Download Our App</h5>
+            </div>
+            <div class="ham-line mx-2 my-3"></div>
+            <div class="footer-line w-25"></div>
+            <div class="stores pt-2">
+              <div class="play-store">
+                <img
+                  src="assets/img/app-store-and-google-play-badges4324.png"
+                  alt=""
+                  class="w-50"
+                />
+              </div>
+              <div class="app-store">
+                <img
+                  src="assets/img/app-store-and-google-play-badges4324-1.png"
+                  alt=""
+                  class="w-50"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hamburger overlay end -->
+
     <!-- header section start -->
     <header>
       <nav
         class="d-flex text-white py-3 px-5 align-items-center justify-content-between w-100 navbar"
       >
-        <div>
+        <div class="d-md-none d-lg-block">
           <ul class="list-inline">
             <li class="list-inline-item">
               <i class="fa-solid fa-phone mx-2"></i
@@ -122,7 +198,7 @@
           ></video>
           <div class="over-lay"></div>
           <div
-            class="banner-header w-100 position-absolute top-0 start-0 d-flex align-items-center justify-content-between"
+            class="banner-header z-1 w-100 position-absolute top-0 start-0 d-flex align-items-center justify-content-between"
           >
             <div class="logo w-100">
               <img src="assets/img/logo2.png" alt="logo" width="594" />
@@ -146,6 +222,15 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <div class="banner-btn position-absolute">
+              <button class="rounded-2">View Our Services</button>
+            </div>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
         <div class="scroll-down w-100 text-center">
           <a href="#about-section">
             <div class="mouse position-absolute">
@@ -158,7 +243,7 @@
 
       <!-- about section start -->
       <section id="about-section">
-        <div class="about row align-items-center h-auto px-5 py-5">
+        <div class="about row align-items-center h-auto px-lg-5 px-md-0 py-5">
           <div class="col-md-6">
             <img
               src="assets/img/Untitled-design-1.jpg"
@@ -171,10 +256,10 @@
             <div class="w-50">
               <h4>ABOUT US</h4>
             </div>
-            <div class="w-75">
+            <div class="lg-w-75 md-w-100">
               <h2>Trusted & Faster Logistic Service Provider</h2>
             </div>
-            <div class="w-75 mb-5">
+            <div class="lg-w-75 md-w-100 mb-5">
               <p class="mb-4">
                 <strong>The Mehta Transport Group</strong> is one of India’s
                 leading group of companies, serving organizations like ITC,
@@ -188,7 +273,7 @@
                 and a comprehensive solution for all your needs!
               </p>
             </div>
-            <div class="w-50 d-flex align-items-center gap-4">
+            <div class="lg-w-50 md-w-100 d-flex align-items-center gap-4">
               <div class="yt-icon text-center">
                 <i class="fa-brands fa-youtube fs-3 text-danger"></i>
               </div>
@@ -202,10 +287,10 @@
       <!-- contact section start -->
       <section class="contact-section">
         <div class="contact row justify-content-center">
-          <div class="col-md-6 contact-info">
+          <div class="col-md-6 col-xl-6 contact-info">
             <div class="contact-h5"><h5>GET A QUOTE</h5></div>
             <div class="contact-h2"><h2>Request A Free Quote</h2></div>
-            <div class="mb-5">
+            <div class="mb-5 contact-para">
               <p>
                 “Reliable Transport, Your Journey’s Partner: We deliver more
                 than goods; we deliver trust, efficiency, and peace of mind.
@@ -230,7 +315,7 @@
             </div>
           </div>
           <div
-            class="col-md-4 contact-form d-flex align-items-center justify-content-center"
+            class="col-md-6 col-xl-4 contact-form d-flex align-items-center justify-content-center"
           >
             <form>
               <input
@@ -266,7 +351,7 @@
       <!-- our service start -->
       <section class="our-service">
         <div class="service row py-5">
-          <div class="col-md-10 m-auto">
+          <div class="col-md-12 col-xl-10 m-xl-auto m-md-0 p-md-0">
             <div class="d-flex flex-column lh-lg">
               <div class="service-h5">
                 <h5 class="text-center">OUR SERVICES</h5>
@@ -288,7 +373,9 @@
                 </p>
               </div>
             </div>
-            <div class="d-flex justify-content-center gap-5">
+            <div
+              class="d-flex flex-md-column flex-sm-column flex-lg-row justify-content-center gap-xl-5 gap-md-2"
+            >
               <div
                 class="card border border-black h-auto rounded-0 shadow-lg"
                 style="width: 18rem"
@@ -410,7 +497,7 @@
       <!-- choose us start -->
       <section class="choose-us">
         <div class="choose row">
-          <div class="col-md-6 choose-us-bg1 position-relative z-1">
+          <div class="col-md-12 col-xl-6 choose-us-bg1 position-relative z-1">
             <div class="w-50 d-flex flex-column mx-auto">
               <div class="choose-h6 z-3">
                 <h6>Track Order</h6>
@@ -433,7 +520,7 @@
             </div>
             <div class="choose-overlay-right position-absolute z-2"></div>
           </div>
-          <div class="col-md-6 choose-us-bg2 position-relative">
+          <div class="col-md-12 col-xl-6 choose-us-bg2 position-relative">
             <div class="w-50 d-flex flex-column mx-auto">
               <div class="choose-h6 z-3">
                 <h6>Track Order</h6>
@@ -476,7 +563,7 @@
       <!-- our service2 start -->
       <section class="our-service2">
         <div class="service-2 row py-5">
-          <div class="col-md-10 m-auto">
+          <div class="col-xl-10 col-md-12 m-xl-auto m-md-2">
             <div class="d-flex flex-column lh-lg">
               <div class="service-h5">
                 <h5 class="text-center">OUR SERVICES</h5>
@@ -487,7 +574,9 @@
                 </h2>
               </div>
             </div>
-            <div class="d-flex justify-content-center gap-5 py-4">
+            <div
+              class="d-flex d-flex flex-md-column flex-sm-column flex-lg-row flex-xl-row justify-content-center gap-xl-5 gap-md-3 py-4"
+            >
               <div
                 class="card rounded-0 border border-0 shadow-lg"
                 style="width: 23rem"
@@ -564,7 +653,7 @@
       <section class="message-section message-parallax position-relative z-1">
         <div class="message-overlay position-absolute z-3 w-100 h-100"></div>
         <div class="message row justify-content-center align-items-center mb-5">
-          <div class="col-md-5 message-info z-3">
+          <div class="col-xl-5 col-md-12 col-sm-12 col-xl-6 col-lg-6 message-info z-3">
             <div class="message-h2">
               <h2>Our Some Important Things That will Satisfy You...</h2>
             </div>
@@ -585,7 +674,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 message-video align-items-center z-3">
+          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 message-video align-items-center z-3">
             <div id="tabs2">
               <div class="w-50">
                 <div id="play-btn">
@@ -618,13 +707,15 @@
       <!-- our service3 start -->
       <section class="service3-section">
         <div class="service3 row justify-content-center">
-          <div class="col-md-10 service3-info">
+          <div class="col-xl-10 col-md-12 service3-info">
             <div class="service3-h5 text-center"><h5>OUR SERVICES</h5></div>
             <div class="service3-h2 text-center">
               <h2>Number Says Everything</h2>
             </div>
 
-            <div class="service3-data d-flex justify-content-between">
+            <div
+              class="service3-data d-flex flex-md-column flex-lg-row justify-content-between align-items-md-center"
+            >
               <div class="pt-4">
                 <span>9,603,125</span>
                 <div class="line m-auto w-50"></div>
@@ -656,7 +747,7 @@
       <!-- our team start -->
       <section class="our-team">
         <div class="team row py-5">
-          <div class="col-md-10 m-auto">
+          <div class="col-md-12 col-xl-10 m-xl-auto mx-md-2">
             <div class="d-flex flex-column lh-lg">
               <div class="team-h5">
                 <h5 class="text-center">OUR TEAM</h5>
@@ -665,7 +756,7 @@
                 <h2 class="text-center">Meet Our Team</h2>
               </div>
             </div>
-            <div class="d-flex justify-content-center gap-4 pt-5">
+            <div class="d-flex d-flex flex-md-column flex-sm-column flex-lg-row flex-xl-row justify-content-center gap-4 pt-5">
               <div
                 class="card h-auto border border-0 rounded-4 shadow-lg"
                 style="width: 18rem"
@@ -857,7 +948,7 @@
       <section class="client-section client-parallax position-relative z-1">
         <div class="client-overlay position-absolute z-3 w-100 h-100"></div>
         <div class="client row justify-content-center align-items-center mb-5">
-          <div class="col-md-11 z-3 p-5">
+          <div class="col-xl-11 col-md-12 z-3 p-5">
             <div class="client-h5 text-center"><h5>Our Partners</h5></div>
             <div class="client-h2 text-center mb-3"><h2>Our Clients</h2></div>
             <div class="client-line bg-white m-auto"></div>
@@ -917,7 +1008,7 @@
       <!-- our blog section start -->
       <section class="our-blog">
         <div class="blog row py-5">
-          <div class="col-md-10 m-auto">
+          <div class="col-md-12 col-xl-10 m-xl-auto mx-md-2">
             <div class="d-flex flex-column lh-lg">
               <div class="blog-h5">
                 <h5 class="text-center">OUR BLOG</h5>
@@ -927,10 +1018,7 @@
               </div>
             </div>
             <div class="d-flex justify-content-center gap-5 py-4">
-              <div
-                class="card rounded-0 shadow-lg h-50"
-                style="width: 23rem"
-              >
+              <div class="card rounded-0 shadow-lg h-50" style="width: 23rem">
                 <img
                   src="assets/img/vecteezy_management-strategies-increase-efficiency-to-control-costs_47846775-768x384.jpg"
                   class="card-img-top rounded-0"
@@ -951,10 +1039,7 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="card rounded-0 shadow-lg h-50"
-                style="width: 23rem"
-              >
+              <div class="card rounded-0 shadow-lg h-50" style="width: 23rem">
                 <img
                   src="assets/img/vecteezy_management-strategies-increase-efficiency-to-control-costs_47846775-768x384.jpg"
                   class="card-img-top rounded-0"
@@ -975,37 +1060,30 @@
                   </div>
                 </div>
               </div>
-              <div
-              class="card rounded-0 shadow-lg h-50"
-              style="width: 23rem"
-            >
-              <img
-                src="assets/img/vecteezy_management-strategies-increase-efficiency-to-control-costs_47846775-768x384.jpg"
-                class="card-img-top rounded-0"
-                alt="..."
-              />
-              <div class="card-body p-4">
-                <div class="blog-h4">
-                  <h4>10 Strategies For Reducing Logistics Costs In 2025</h4>
-                </div>
-                <div class="mb-3">
-                  <p class="blog-para">
-                    Introduction As Logistics Costs Continue To Rise,
-                    Businesses Must Adopt Smarter Strategies To Stay...
-                  </p>
-                </div>
-                <div class="blog-btn">
-                  <button class="w-50">Read More</button>
+              <div class="card rounded-0 shadow-lg h-50" style="width: 23rem">
+                <img
+                  src="assets/img/vecteezy_management-strategies-increase-efficiency-to-control-costs_47846775-768x384.jpg"
+                  class="card-img-top rounded-0"
+                  alt="..."
+                />
+                <div class="card-body p-4">
+                  <div class="blog-h4">
+                    <h4>10 Strategies For Reducing Logistics Costs In 2025</h4>
+                  </div>
+                  <div class="mb-3">
+                    <p class="blog-para">
+                      Introduction As Logistics Costs Continue To Rise,
+                      Businesses Must Adopt Smarter Strategies To Stay...
+                    </p>
+                  </div>
+                  <div class="blog-btn">
+                    <button class="w-50">Read More</button>
+                  </div>
                 </div>
               </div>
-            </div>
-              
             </div>
             <div class="d-flex justify-content-center gap-5 py-4">
-              <div
-                class="card rounded-0 shadow-lg h-50"
-                style="width: 23rem"
-              >
+              <div class="card rounded-0 shadow-lg h-50" style="width: 23rem">
                 <img
                   src="assets/img/vecteezy_management-strategies-increase-efficiency-to-control-costs_47846775-768x384.jpg"
                   class="card-img-top rounded-0"
@@ -1026,10 +1104,7 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="card rounded-0 shadow-lg h-50"
-                style="width: 23rem"
-              >
+              <div class="card rounded-0 shadow-lg h-50" style="width: 23rem">
                 <img
                   src="assets/img/vecteezy_management-strategies-increase-efficiency-to-control-costs_47846775-768x384.jpg"
                   class="card-img-top rounded-0"
@@ -1050,10 +1125,7 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="card rounded-0 shadow-lg h-50"
-                style="width: 23rem"
-              >
+              <div class="card rounded-0 shadow-lg h-50" style="width: 23rem">
                 <img
                   src="assets/img/vecteezy_management-strategies-increase-efficiency-to-control-costs_47846775-768x384.jpg"
                   class="card-img-top rounded-0"
@@ -1088,7 +1160,7 @@
     <!-- footer start -->
     <footer class="w-100">
       <div class="footer-container">
-        <div class="row py-5 w-75 m-auto">
+        <div class="row py-5 w-xl-75 w-md-100 m-xl-auto mx-md-1">
           <div class="col-md-4">
             <div class="footer-logo">
               <img src="assets/img/logo2 (1).png" alt="" />

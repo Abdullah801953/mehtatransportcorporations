@@ -1,0 +1,54 @@
+@media (max-width: 1024px) {
+  #frame2 {
+    width: 45vw !important;
+    height: 50%;
+  }
+  main .contact-section .contact .contact-info {
+    padding: 3vw 3vw !important;
+  }
+  .our-service .service .card {
+    width: 25rem !important;
+  }
+  main .our-service .service .card-icon {
+    width: 10vw;
+  }
+  main .our-service .service .card-icon i {
+    font-size: 3.5vw !important;
+  }
+  main .our-service .service .card-para p {
+    font-size: 1.7vw;
+  }
+  main .contact-section .contact .contact-form form input,
+  select,
+  button {
+    width: 49vw;
+    margin: 20px 0;
+  }
+  main .message-section .message .message-vid-btn button {
+    width: 408px;
+  }
+  .our-service2 .service2 .card {
+    width: 32rem !important;
+  }
+  main .swiper .swiper-slide img {
+    width: 150px;
+  }
+  main .banner-section .video .banner-h1 h1 {
+    font-size: 9vw;
+  }
+  main .banner-section .video .banner-h2 h2 {
+    font-size: 6vw!important;
+  }
+  main .banner-section .video .banner-para {
+    width: 22%;
+}
+}
+@media (min-width: 1024px) {
+  #frame2 {
+    width: 250%;
+    height: 70%;
+  }
+  .banner-btn {
+    display: block;
+  }
+}
