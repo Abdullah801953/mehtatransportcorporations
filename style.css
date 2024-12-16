@@ -376,11 +376,16 @@ main .choose-us .choose-us-bg1 {
   height: 500px;
   padding: 100px 0;
 }
+main .choose-us .choose-list li{
+  font-family: "Poppins", Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
 main .choose-us .choose-us-bg2 {
   background-image: url(assets/img/2-1-scaled.jpg);
   background-size: cover;
   height: 500px;
-  padding: 100px 0;
+  padding: 86px 0;
 }
 main .choose-us .choose-h6 h6 {
   font-family: "Poppins", Sans-serif;
@@ -1134,8 +1139,6 @@ form#chatForm button.chat-button.inactive-chat.active {
 transform: rotate(90deg);
 background-size: 0;
 }
-
-
 
 
 
