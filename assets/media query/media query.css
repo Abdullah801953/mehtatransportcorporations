@@ -44,8 +44,8 @@
   }
   main .banner-section .banner-btn {
     bottom: 14%;
-    width: 100%!important;
-}
+    width: 100% !important;
+  }
 }
 @media (max-width: 768px) {
   .our-service .service .card {
@@ -80,10 +80,13 @@
     width: 88vw !important;
     margin: auto;
   }
-  .banner-section .banner-btn{
-    width: 100%!important;
+  .banner-section .banner-btn {
+    width: 100% !important;
     display: flex;
     justify-content: center;
+  }
+  main .banner-section .video .banner-para {
+    width: 41%;
   }
 }
 @media (max-width: 500px) {
@@ -100,13 +103,12 @@
   main .banner-section .video .banner-para {
     width: 67%;
   }
-  .ham-logo img{
-    width: 22rem!important;
+  .ham-logo img {
+    width: 22rem !important;
   }
-  .navbar{
-    gap: 15px!important;
+  .navbar {
+    gap: 15px !important;
   }
-  
 }
 
 @media (min-width: 1024px) {
