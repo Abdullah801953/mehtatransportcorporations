@@ -1,6 +1,6 @@
 @media (max-width: 1024px) {
   #frame2 {
-    width: 45vw !important;
+    width: 37vw !important;
     height: 50%;
   }
   main .contact-section .contact .contact-info {
@@ -25,7 +25,7 @@
     margin: 20px 0;
   }
   main .message-section .message .message-vid-btn button {
-    width: 408px;
+    width: 37vw;
   }
   .our-service2 .service2 .card {
     width: 32rem !important;
@@ -37,12 +37,65 @@
     font-size: 9vw;
   }
   main .banner-section .video .banner-h2 h2 {
-    font-size: 6vw!important;
+    font-size: 6vw !important;
   }
   main .banner-section .video .banner-para {
     width: 22%;
+  }
 }
+@media (max-width: 768px) {
+  .our-service .service .card {
+    width: 96vw !important;
+    margin: auto;
+  }
+
+  main .our-service .service .card-icon {
+    width: 16vw;
+  }
+  main .our-service .service .card-icon {
+    padding: 39px 34px;
+    top: 11%;
+    left: 42%;
+  }
+  main .our-service .service .card-icon i {
+    font-size: 5.5vw !important;
+  }
+  #card {
+    width: 91vw !important;
+    margin: auto;
+  }
+  #frame2 {
+    width: 92vw !important;
+    height: 77%;
+  }
+  .our-team .team .card {
+    width: 90vw !important;
+    margin: auto;
+  }
+  .our-blog .blog .card {
+    width: 88vw !important;
+    margin: auto;
+  }
 }
+@media (max-width: 500px) {
+  .logo img {
+    width: 10rem !important;
+  }
+  main .banner-section .video .menu-btn button {
+    padding: 7px 25px;
+    width: 123px;
+  }
+  .ham-overlay .ham-nav-list {
+    width: 100% !important;
+  }
+  main .banner-section .video .banner-para {
+    width: 67%;
+  }
+  .ham-logo img{
+    width: 22rem!important;
+  }
+}
+
 @media (min-width: 1024px) {
   #frame2 {
     width: 250%;
