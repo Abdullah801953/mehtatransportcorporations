@@ -76,6 +76,11 @@
     width: 88vw !important;
     margin: auto;
   }
+  .banner-section .banner-btn{
+    width: 100%!important;
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (max-width: 500px) {
   .logo img {
