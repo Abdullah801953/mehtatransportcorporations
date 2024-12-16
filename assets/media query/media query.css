@@ -16,7 +16,7 @@
     font-size: 3.5vw !important;
   }
   main .our-service .service .card-para p {
-    font-size: 1.7vw;
+    /* font-size: 1.7vw; */
   }
   main .contact-section .contact .contact-form form input,
   select,
@@ -108,6 +108,16 @@
   }
   .navbar {
     gap: 15px !important;
+  }
+  main .contact-section .contact .contact-form form input,
+  select,
+  button {
+    width: 96vw;
+    margin: 20px 0;
+  }
+  .choose-us .choose .choose-us-bg1 .chooseus-container{
+    width: 100%!important;
+    padding: 0 26px;
   }
 }
 

@@ -1,40 +1,24 @@
-// navbar sticky
-// document.addEventListener("scroll", () => {
-//   const navbar1 = document.querySelector(".navbar1");
-//   const navbar2 = document.querySelector(".banner-header");
+// sticky navbar
+const topNav=document.querySelector("topNav");
+const bottomNav=document.querySelector("banner-header");
 
-//   let scrollPosition = window.scrollY;
-//   console.log(scrollPosition);
-//   // Check the scroll position
-//   if (scrollPosition > 100) {
-//     navbar1.style.transform = "translateY(-100%)";
+let lastScrollY = window.scrollY;
 
-//     // Show the second navbar
-//     navbar2.style.top = "100px";
-//   } else {
-//     // Show the first navbar
-//     navbar1.style.transform = "translateY(0)";
+window.addEventListener("scroll", () => {
+  const currentScrollY = window.scrollY;
 
-//     // Hide the second navbar
-//     navbar2.style.top = "-100px";
-//   }
-// });
+  if (currentScrollY > lastScrollY) {
+    // User is scrolling down
+    topNav.style.transform = "translateY(-100%)"; // Hide top navbar
+    bottomNav.classList.add("show"); // Show bottom navbar
+  } else {
+    // User is scrolling up
+    topNav.style.transform = "translateY(0)"; // Show top navbar
+    bottomNav.classList.remove("show"); // Hide bottom navbar
+  }
 
-// const mainNavbar = document.querySelector(".navbar1");
-// const stickyNavbar = document.querySelector(".banner-header");
-
-// // Scroll event listener
-// window.addEventListner("scroll", () => {
-//   // Check scroll position
-//   if (window.scrollY > 100) {
-//     // When scrolled 100px or more
-//     mainNavbar.style.display = "none"; // Hide main navbar
-//     stickyNavbar.classList.add("show"); // Show sticky navbar
-//   } else {
-//     mainNavbar.style.display = "block"; // Show main navbar
-//     stickyNavbar.classList.remove("show"); // Hide sticky navbar
-//   }
-// });
+  lastScrollY = currentScrollY; // Update last scroll position
+});
 // youtube video
 document.getElementById("play-btn").addEventListener("click", () => {
   const frame = getElementById("frame2");
